@@ -1,0 +1,25 @@
+{
+  "name": "cv-parser",
+  "version": "1.0.0",
+  "description": "A Node.js program that helps you build different variations of a same Curriculum Vitae / Resumé ",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryuu22/CV-parser.git"
+  },
+  "keywords": [
+    "resumé",
+    "cv",
+    "util"
+  ],
+  "author": "Dan K. Bueno",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/Ryuu22/CV-parser/issues"
+  },
+  "homepage": "https://github.com/Ryuu22/CV-parser#readme"
+}
