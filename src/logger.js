@@ -24,8 +24,6 @@ const BgMagenta = "\x1b[45m";
 const BgCyan = "\x1b[46m";
 const BgWhite = "\x1b[47m";
 
-
-
 module.exports = {
   print: function (text) {
     console.log("- | " + text);
@@ -38,8 +36,8 @@ module.exports = {
   },
   success: function (text) {
     console.log(FgGreen + "o | " + text + Reset);
+  },
+  separator: function () {
+    console.log("o ------------------------------------- o");
   }
 };
-
-var logger = function () {
-}

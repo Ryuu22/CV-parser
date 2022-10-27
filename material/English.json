@@ -1,0 +1,72 @@
+{
+    "fullname" : "Daniel Carmona Bueno",
+    "occupation" : "Developer",
+    "phone" : "000000000",
+    "location" : "Seoul, Rep. Of Korea",
+    "website" : "",
+    "email" : "",
+    "links" : [
+        {
+            "string" : "Linkedin",
+            "url" : "url"
+        },
+        {
+            "string" : "Linkedin",
+            "url" : "url"
+        }
+    ],
+    "skills" : [
+        "A",
+        "B",
+        "C",
+        "D"
+    ],
+    "languages" : [
+        {
+            "lang" : "Spanish",
+            "proficiency" : 10
+        },
+        {
+            "lang" : "English",
+            "proficiency" : 8
+        },
+        {
+            "lang" : "Korean",
+            "proficiency" : 5
+        }
+    ],
+    "about" : " Multilingual software developer born in Spain now living in South Korea, I spent the 2 first years of my career working for the video game industry and the last 2 years making web apps. \n My current stack is vueJS, nodeJS and mysql on Linux but I enjoy learning and trying new technologies.\nI love tinkering and trying out new things. I am looking for new challenges in a welcoming work environment.",
+    "history" : [
+        {
+            "title" : "Internship at Catalonia hotels & resorts, Barcelona",
+            "date" : "February 2016—August 2016",
+            "desc" : "Fixed computers and created local environments for this hotel chain to operate world wide.\nI obtained a lot of real world experience and provided real help in exchange.\nThanks to this job I know a lot about computers and maintenance. "
+        },
+        {
+            "title" : "Junior Developer at abylight studios,Barcelona",
+            "date" : "January 2018—March 2020",
+            "desc" : "Developed high quality iOS and apple watch projects. Mostly creating tools and pipelines.\nMy favorite thing about this job was automating work and helping my colleagues to be more productive."
+        },
+        {
+            "title" : "Full Stack developer at SAIDLITE, Seoul",
+            "date" : "March 2020—March 2022",
+            "desc" : " Developed a myriad of web applications using vue 2/3.Also written backends using node.js and express.js.\nWhat I loved the most about this job was that I had the opportunity to learn a lot about networking technologies and I was free to use linux as my daily driver OS.\nI also had to deploy the applications myself so I had a full understanding on how the whole application worked."
+        }
+    ],
+    "schools" : [
+        {
+            "name" : "HND in VideoGame development,CEVBarcelona, Barcelona",
+            "date" : "September 2016—August 2018"
+        }
+    ],
+    "references" : [
+        {
+            "name" : "Hyung-GiMin from SAIDLITE",
+            "contact" : "pinkwink.korea@gmail.com +82 010 9439 8801"
+        },
+        {
+            "name" : "Javier Carpio from Abylight",
+            "contact" : "Javiercarpiodev@gmail.com +34 607 248 044"
+        }
+    ]
+}
