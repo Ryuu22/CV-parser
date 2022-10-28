@@ -1,5 +1,6 @@
 const logger = require('./logger.js');
 const reader = require('./reader.js');
+const replacer = require('./replacer.js');
   
 logger.separator();
 logger.success("CV-Parser started Version 1.0");
@@ -14,9 +15,11 @@ var template = "";
 // 1. Attempt to read .json file
 try {
     jsonData = reader.readJson("../material/English.json");
-    logger.success(`Hello ${data.fullname}`);
+    logger.success(`Hello ${jsonData.fullname}`);
 } catch (error) {
-    logger.error(error);   
+    logger.error(error); 
+    logger.error("Closing Application ");
+    process.exit();
 }
 
 // 2. Attempt to read HTML template
@@ -28,5 +31,13 @@ try {
 }
 
 // 3. Replace HTML template tags with JSON input
+
+try {
+    const output = replacer.replaceKeyWords(template, jsonData);
+    logger.print(output);
+} catch (error) {
+    logger.error(error);   
+}
+
 
 // 4. Save as HTML file
