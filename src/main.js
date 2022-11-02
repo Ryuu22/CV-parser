@@ -1,6 +1,7 @@
 const logger = require('./logger.js');
 const reader = require('./reader.js');
 const replacer = require('./replacer.js');
+const writter = require('./writter.js');
   
 logger.separator();
 logger.success("CV-Parser started Version 1.0");
@@ -31,13 +32,19 @@ try {
 }
 
 // 3. Replace HTML template tags with JSON input
-
+let output = "";
 try {
-    const output = replacer.replaceKeyWords(template, jsonData);
-    logger.print(output);
+    output = replacer.replaceKeyWords(template, jsonData);
+    //logger.print(output);
 } catch (error) {
     logger.error(error);   
 }
 
 
 // 4. Save as HTML file
+
+try {
+    writter.saveHTML(output);
+} catch (error) {
+    logger.error(error);
+}
