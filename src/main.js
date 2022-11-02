@@ -13,9 +13,11 @@ var template = "";
 
 // 0. Read flags
 
+const jsonFileName = "../material/English.json";
 // 1. Attempt to read .json file
+logger.print("Attempting to open " + jsonFileName);
 try {
-    jsonData = reader.readJson("../material/English.json");
+    jsonData = reader.readJson(jsonFileName);
     logger.success(`Hello ${jsonData.fullname}`);
 } catch (error) {
     logger.error(error); 
@@ -27,15 +29,18 @@ try {
 
 try {
     template = reader.readTemplate("material/index.html");
+    logger.success(`HTML template succesfully loaded...`);
 } catch (error) {
     logger.error(error);   
 }
 
 // 3. Replace HTML template tags with JSON input
+logger.print(`Replacing custom keys...`);
 let output = "";
 try {
     output = replacer.replaceKeyWords(template, jsonData);
-    //logger.print(output);
+    logger.success(`Succesfully replaced keys`);
+
 } catch (error) {
     logger.error(error);   
 }
@@ -45,6 +50,7 @@ try {
 
 try {
     writter.saveHTML(output);
+    logger.success(`Succesfully saved`);
 } catch (error) {
     logger.error(error);
 }
