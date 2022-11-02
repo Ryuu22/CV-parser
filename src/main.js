@@ -7,13 +7,13 @@ logger.separator();
 logger.success("CV-Parser started Version 1.0");
 logger.separator();
 
-
 var jsonData = {};
 var template = "";
 
 // 0. Read flags
 
 const jsonFileName = "../material/English.json";
+
 // 1. Attempt to read .json file
 logger.print("Attempting to open " + jsonFileName);
 try {
@@ -44,7 +44,6 @@ try {
 } catch (error) {
     logger.error(error);   
 }
-
 
 // 4. Save as HTML file
 
