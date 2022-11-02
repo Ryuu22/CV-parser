@@ -13,7 +13,12 @@ module.exports = {
 
                         tempString += createLanguageBlock(element.lang, element.proficiency);
                     }
-
+                }
+                else if (currentKey === "references") {
+                    for (let j = 0; j < jsonData[currentKey].length; j++) {
+                        const element = jsonData[currentKey][j];
+                        tempString += createReferenceBlock(element.name, element.contact);
+                    }      
                 }
                 else {
                     for (let j = 0; j < jsonData[currentKey].length; j++) {
@@ -50,10 +55,13 @@ function findAndReplace(template, object) {
     return template;
 }
 
-
 function createLanguageBlock(lang,level) {
     let lvlpct = level * 10;
     if(level < 0) lvlpct = 0;
     if(level > 10) lvlpct = 100;
     return `<p>${lang}</p><div class="bar_bg"><div class="bar_fg" style="width:${lvlpct}%"></div></div>`;
+}
+
+function createReferenceBlock( name,contact ) {
+    return `<div class="box"><h5 class="employment_history">${name}</h5><h6 class="employment_history">${contact}</h6></div>`;
 }
