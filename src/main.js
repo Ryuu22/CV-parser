@@ -1,3 +1,4 @@
+const flagger = require('./flagger');
 const logger = require('./logger.js');
 const reader = require('./reader.js');
 const replacer = require('./replacer.js');
@@ -9,10 +10,16 @@ logger.separator();
 
 var jsonData = {};
 var template = "";
+var jsonFileName = "";
+var templateName = "";
 
 // 0. Read flags
-
-const jsonFileName = "../material/English.json";
+try {
+    templateName = flagger.readTemplateName();
+    jsonFileName = flagger.readDataFileName();
+} catch (error) {
+    logger.error(error);
+}
 
 // 1. Attempt to read .json file
 logger.print("Attempting to open " + jsonFileName);
@@ -26,9 +33,8 @@ try {
 }
 
 // 2. Attempt to read HTML template
-
 try {
-    template = reader.readTemplate("material/index.html");
+    template = reader.readTemplate(templateName);
     logger.success(`HTML template succesfully loaded...`);
 } catch (error) {
     logger.error(error);   
