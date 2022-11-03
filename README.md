@@ -24,4 +24,31 @@ Then just clone this repository:
 $ git clone https://github.com/Ryuu22/CV-parser.git
 ```
 
-T
+Change directory into the repository
+
+```bash
+$ node .  --template "templates/index.html" --data "../data/English.json"              
+```
+If everything went correctly the terminal should output the following lines:
+<img src="screenshots/terminal_o.png">            
+
+This creates a file in the directory ```output``` called CV.html.
+
+**Beware** that if the template depends on CSS or images, you must manually move them to the output directory.
+
+Using the default template and Data file will produce the following result.
+<img src="screenshots/result.png">
+You can save this as PDF by printing the website in your browser.
+
+Now you can modify the data and template files as you need and regenerate the template to see its changes.
+
+**protip:** Use nodemon to work while editing your template. Nodemon will rerun the app everytime you save a file in your project so you don't have to do it manually.
+
+
+# Future improvements
+
+- [ ] Data file generator. ( Small companion application in pure JS and HTML that generates a JSON data file )
+- [ ] Add more templates.
+
+- [ ] Automatically save to PDF
+
