@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${fullname}'s resume</title>
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1> ${fullname} </h1>
+            <h3 style="color: #646464;">${location} ${phone}</h3>
+        </div>
+        <div class="main">
+            <div class="left-column">
+                <div class="title">Details</div>
+                <p>${location}</p>
+                <p> ${phone} </p>
+                <p> ${email} </p>
+                <p> ${website} </p>
+                <div class="title">Links</div>
+                    ${links}
+                <div><br></div>
+                <div class="title">Skills</div>
+                ${skills}
+                <div><br></div>
+                <div class="title">Languages</div>
+                ${languages}
+            </div>
+            <div class="right-column">
+                <div class="box-title"> 
+                    <img src="account.svg" alt="" srcset="">
+                    <div class="title">
+                        About Myself
+                    </div>
+                </div>
+                <div class="box">
+                    <p>
+                        ${about}
+                    </p>
+                </div>
+                <div class="box-title"> 
+                    <img src="briefcase.svg" alt="" srcset="">
+                    <div class="title">
+                        Employment History
+                    </div>
+                </div>
+                ${history}
+                <div class="box-title"> 
+                    <img src="school.svg" alt="" srcset="">
+                    <div class="title">
+                        Education
+                    </div>
+                </div>
+                <div class="box">
+                    ${schools}
+                </div>
+                <div class="box-title"> 
+                    <img src="bullhorn.svg" alt="" srcset="">
+                    <div class="title">
+                        References
+                    </div>
+                </div>
+                ${references}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+    "fullname" : "John Doe",
+    "occupation" : "Developer",
+    "phone" : "000000000",
+    "location" : "Seoul, Rep. Of Korea",
+    "website" : "",
+    "email" : "",
+    "links" : [
+        "<a href=\"\">Linkedin</a>",
+        "<a href=\"https://github.com/ryuu22\">Github</a>"
+    ],
+    "skills" : [
+        "<p>Python</p> ",
+        "<p>Communication Skills</p> ",
+        "<p>Node.js</p> ",
+        "<p>Adaptability</p> ",
+        "<p>HTML</p> ",
+        "<p>MySQL</p> ",
+        "<p>Git</p> ",
+        "<p>HTML & CSS</p> ",
+        "<p>SQL</p> ",
+        "<p>JavaScript</p> ",
+        "<p>Software Troubleshooting</p> ",
+        "<p>Knowledgable in User Interface/ User Experience</p> "
+    ],
+    "languages" : [
+        {
+            "lang" : "Spanish",
+            "proficiency" : 10
+        },
+        {
+            "lang" : "English",
+            "proficiency" : 8
+        },
+        {
+            "lang" : "Korean",
+            "proficiency" : 5
+        }
+    ],
+    "about" : " Here you should write something about yourself",
+    "history" : [
+        "<div class=\"box\"><h5 class=\"employment_history\">Title of the position, Barcelona</h5><h6 class=\"employment_history\">Date of the position</h6><p>    Description of what you did while working there.</p></div>",   
+        "<div class=\"box\"><h5 class=\"employment_history\">Title of the position, Barcelona</h5><h6 class=\"employment_history\">Date of the position</h6><p>    Description of what you did while working there.</p></div>",   
+        "<div class=\"box\"><h5 class=\"employment_history\">Title of the position, Barcelona</h5><h6 class=\"employment_history\">Date of the position</h6><p>    Description of what you did while working there.</p></div>"
+    ],
+    "schools" : [
+        "<h5 class=\"employment_history\">School name, Barcelona</h5><h6 class=\"employment_history\">Date</h6>"
+    ],
+    "references" : [
+        {
+            "name" : "Juan Garcia Lopez from Microsoft",
+            "contact" : "fakeemail@gmail.com +00 000 000 000"
+        },
+        {
+            "name" : "Jamal Johnson from Amazon",
+            "contact" : "fakeemail@gmail.com +00 000 000 000"
+        }
+    ]
+}
