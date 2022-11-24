@@ -14,6 +14,13 @@ module.exports = {
         }
         return data;
 	},
+	readOutPutFileName: function () {
+        let data = findFlag("--out");
+        if(data === false ) {
+            return "";
+        }
+        return data;
+	},
 };
 
 function findFlag(flagName) {

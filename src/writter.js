@@ -2,7 +2,7 @@
 const fs = require("fs");
 
 module.exports = {
-	saveHTML: function (data) {
-        fs.writeFileSync("output/cv.html", data);
+	saveHTML: function (savefilename, data) {
+        fs.writeFileSync(savefilename, data);
 	},
 };

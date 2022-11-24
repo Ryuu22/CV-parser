@@ -8,15 +8,22 @@ logger.separator();
 logger.success("CV-Parser started Version 1.0");
 logger.separator();
 
-var jsonData = {};
-var template = "";
-var jsonFileName = "";
-var templateName = "";
+let jsonData = {};
+let template = "";
+let jsonFileName = "";
+let templateName = "";
+let saveFileName = "output/cv.html";
 
 // 0. Read flags
 try {
+    //Set obligatory flags
     templateName = flagger.readTemplateName();
     jsonFileName = flagger.readDataFileName();
+
+    // Set optional flags
+    const outputFileName = flagger.readOutPutFileName();
+    if(outputFileName !== "") saveFileName = outputFileName;
+
 } catch (error) {
     logger.error(error);
 }
@@ -54,8 +61,8 @@ try {
 // 4. Save as HTML file
 
 try {
-    writter.saveHTML(output);
-    logger.success(`Succesfully saved`);
+    writter.saveHTML(saveFileName, output);
+    logger.success(`Succesfully saved on ${saveFileName}`);
 } catch (error) {
     logger.error(error);
 }
