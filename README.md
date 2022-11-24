@@ -1,4 +1,10 @@
 # CV-parser
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+
 CV-parser is a simple and lightweight cli application that helps you compile different variations of the same Curriculum Vitae / Resumé with ease.
 
 It is very easy to work with since you just need to provide 2 different files that can be easily edited with any text editor.
@@ -41,6 +47,12 @@ Using the default template and Data file will produce the following result.
 You can save this as PDF by printing the website in your browser.
 
 Now you can modify the data and template files as you need and regenerate the template to see its changes.
+
+You can change the default save location and filename by added the ```--out``` flag in the command line.
+
+```bash
+$ node .  --template "templates/index.html" --data "../data/English.json" --out "output/mycv.html"             
+```
 
 **protip:** Use nodemon to work while editing your template. Nodemon will rerun the app everytime you save a file in your project so you don't have to do it manually.
 
